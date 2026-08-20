@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\6.Advance_dot_net\\Food_For_All\\Food_For_All\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{728E9ADE-FA21-437E-B27E-85A6F38DC0BF}|AppLayerAPI\\AppLayerAPI.csproj|d:\\6.advance_dot_net\\food_for_all\\food_for_all\\applayerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{728E9ADE-FA21-437E-B27E-85A6F38DC0BF}|AppLayerAPI\\AppLayerAPI.csproj|solutionrelative:applayerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9F0F2D8-8905-46F4-9CCD-7B166373F270}|DAL\\DAL.csproj|d:\\6.advance_dot_net\\food_for_all\\food_for_all\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9F0F2D8-8905-46F4-9CCD-7B166373F270}|DAL\\DAL.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F10F5E30-0E87-437C-A49D-5F5E70AF44E5}|BLL\\BLL.csproj|d:\\6.advance_dot_net\\food_for_all\\food_for_all\\bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F10F5E30-0E87-437C-A49D-5F5E70AF44E5}|BLL\\BLL.csproj|solutionrelative:bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\6.Advance_dot_net\\Food_For_All\\Food_For_All\\AppLayerAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AppLayerAPI\\appsettings.json",
+              "ToolTip": "D:\\6.Advance_dot_net\\Food_For_All\\Food_For_All\\AppLayerAPI\\appsettings.json",
+              "RelativeToolTip": "AppLayerAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-20T14:27:10.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\6.Advance_dot_net\\Food_For_All\\Food_For_All\\DAL\\Class1.cs",
+              "RelativeDocumentMoniker": "DAL\\Class1.cs",
+              "ToolTip": "D:\\6.Advance_dot_net\\Food_For_All\\Food_For_All\\DAL\\Class1.cs",
+              "RelativeToolTip": "DAL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T14:24:01.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\6.Advance_dot_net\\Food_For_All\\Food_For_All\\BLL\\Class1.cs",
+              "RelativeDocumentMoniker": "BLL\\Class1.cs",
+              "ToolTip": "D:\\6.Advance_dot_net\\Food_For_All\\Food_For_All\\BLL\\Class1.cs",
+              "RelativeToolTip": "BLL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T14:23:43.298Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

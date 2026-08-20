@@ -1,0 +1,14 @@
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\bin\Debug\net10.0\DAL.deps.json
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\bin\Debug\net10.0\DAL.dll
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\bin\Debug\net10.0\DAL.pdb
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.AssemblyInfoInputs.cache
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.AssemblyInfo.cs
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.csproj.CoreCompileInputs.cache
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.dll
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\refint\DAL.dll
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.pdb
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\ref\DAL.dll
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\bin\Debug\net10.0\DAL.runtimeconfig.json
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.csproj.AssemblyReference.cache
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\DAL\obj\Debug\net10.0\DAL.genruntimeconfig.cache
