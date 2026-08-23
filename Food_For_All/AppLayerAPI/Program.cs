@@ -1,3 +1,9 @@
+using BLL;
+using BLL.Services;
+using DAL.EF;
+using DAL.Repository;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +11,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddScoped<EmployeeRepo>();
+builder.Services.AddScoped<EmployeeService>();
+
+builder.Services.AddScoped<RestaurentRepo>();
+builder.Services.AddScoped<RestaurentService>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+builder.Services.AddDbContext<FoodForAllContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConn")));
+
 
 var app = builder.Build();
 

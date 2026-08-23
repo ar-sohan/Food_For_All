@@ -13,3 +13,4 @@ D:\6.Advance_dot_net\Food_For_All\Food_For_All\BLL\obj\Debug\net10.0\BLL.dll
 D:\6.Advance_dot_net\Food_For_All\Food_For_All\BLL\obj\Debug\net10.0\refint\BLL.dll
 D:\6.Advance_dot_net\Food_For_All\Food_For_All\BLL\obj\Debug\net10.0\BLL.pdb
 D:\6.Advance_dot_net\Food_For_All\Food_For_All\BLL\obj\Debug\net10.0\ref\BLL.dll
+D:\6.Advance_dot_net\Food_For_All\Food_For_All\BLL\obj\Debug\net10.0\BLL.sourcelink.json
