@@ -13,10 +13,54 @@
     }
   ],
   "paths": {
-    "/api/AddCollectRequest/add": {
+    "/api/CollectRequest/getall": {
+      "get": {
+        "tags": [
+          "CollectRequest"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CollectRequest/add": {
       "post": {
         "tags": [
-          "AddCollectRequest"
+          "CollectRequest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CollectRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CollectRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CollectRequestModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CollectRequest/accept": {
+      "put": {
+        "tags": [
+          "CollectRequest"
         ],
         "requestBody": {
           "content": {
@@ -366,7 +410,7 @@
   },
   "tags": [
     {
-      "name": "AddCollectRequest"
+      "name": "CollectRequest"
     },
     {
       "name": "Employee"

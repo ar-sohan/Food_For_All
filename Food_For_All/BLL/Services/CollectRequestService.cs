@@ -18,11 +18,21 @@ namespace BLL.Services
             this.mapper = mapper;
         }
 
+        public List<CollectRequestModel> GetAllCollectRequests()
+        {
+            var collectRequests = repo.GetAllCollectRequests();
+            return mapper.Map<List<CollectRequestModel>>(collectRequests);
+        }
         public bool AddCollectRequest(CollectRequestModel collectRequestModel)
         {
             var collectRequest = mapper.Map<CollectRequest>(collectRequestModel);
             return repo.AddCollectRequest(collectRequest);
         }
 
+        public bool UpdateCollectRequest(CollectRequestModel collectRequestModel)
+        {
+            var collectRequest = mapper.Map<CollectRequest>(collectRequestModel);
+            return repo.updateCollectRequest(collectRequest);
+        }
     }
 }

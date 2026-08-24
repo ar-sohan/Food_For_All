@@ -1,8 +1,24 @@
 [
   {
-    "ContainingType": "AppLayerAPI.Controllers.AddCollectRequestController",
+    "ContainingType": "AppLayerAPI.Controllers.CollectRequestController",
+    "Method": "UpdateCollectRequest",
+    "RelativePath": "api/CollectRequest/accept",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collectRequestModel",
+        "Type": "BLL.Models.CollectRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayerAPI.Controllers.CollectRequestController",
     "Method": "AddCollectRequest",
-    "RelativePath": "api/AddCollectRequest/add",
+    "RelativePath": "api/CollectRequest/add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -13,6 +29,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLayerAPI.Controllers.CollectRequestController",
+    "Method": "GetAll",
+    "RelativePath": "api/CollectRequest/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
