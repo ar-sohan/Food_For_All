@@ -49,5 +49,16 @@ namespace DAL.Repository
             return db.SaveChanges() > 0;
         }
 
+        public bool UpdateStatus(int id, string status)
+        {
+            var data = db.CollectRequests.Find(id);
+            if (data == null)
+            {
+                return false;
+            }
+            data.Status = status;
+            return db.SaveChanges() > 0;
+        }
+
     }
 }

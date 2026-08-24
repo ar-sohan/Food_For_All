@@ -21,6 +21,9 @@ builder.Services.AddScoped<EmployeeService>();
 builder.Services.AddScoped<RestaurentRepo>();
 builder.Services.AddScoped<RestaurentService>();
 
+builder.Services.AddScoped<DistributionRepo>();
+builder.Services.AddScoped<DistributionService>();
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddDbContext<FoodForAllContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConn")));

@@ -34,5 +34,10 @@ namespace BLL.Services
             var collectRequest = mapper.Map<CollectRequest>(collectRequestModel);
             return repo.updateCollectRequest(collectRequest);
         }
+
+        public bool UpdateStatus(int id, string status)
+        {
+            return repo.UpdateStatus(id, status);
+        }
     }
 }

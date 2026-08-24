@@ -48,5 +48,16 @@ namespace AppLayerAPI.Controllers
             return BadRequest();
         }
 
+        [HttpPatch("collected")]
+        public IActionResult UpdateStatus(int id, string status)
+        {
+            var result = crs.UpdateStatus(id, status);
+            if (result)
+            {
+                return Ok(result);
+            }
+            return BadRequest();
+        }
+
     }
 }
