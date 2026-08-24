@@ -17,30 +17,6 @@ namespace BLL.Services
             this.mapper = mapper;
         }
 
-        public List<Restaurent> GetAllRestaurents()
-        {
-            var data = rr.GetAllRestaurents();
-            return mapper.Map<List<Restaurent>>(data);
-        }
-
-        public Restaurent GetRestaurentById(int id)
-        {
-            var data = rr.GetRestaurentById(id);
-            return mapper.Map<Restaurent>(data);
-        }
-        public bool CreateRestaurent(Restaurent restaurent)
-        {
-            var mapped = mapper.Map<Restaurent>(restaurent);
-            return rr.CreateRestaurent(mapped);
-        }
-        public bool DeleteRestaurent(int id)
-        {
-            return rr.DeleteRestaurent(id);
-        }
-        public bool UpdateRestaurent(Restaurent restaurent)
-        {
-            var mapped = mapper.Map<Restaurent>(restaurent);
-            return rr.UpdateRestaurent(mapped);
-        }
+        
     }
 }

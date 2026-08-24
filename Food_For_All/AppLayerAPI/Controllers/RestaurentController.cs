@@ -14,11 +14,6 @@ namespace AppLayerAPI.Controllers
             this.rs = rs;
         }
 
-        [HttpGet("all")]
-        public IActionResult GetAll()
-        {
-            var data = rs.GetAllRestaurents();
-            return Ok(data);
-        }
+        
     }
 }
