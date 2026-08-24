@@ -33,13 +33,14 @@ public partial class FoodForAllContext : DbContext
         {
             entity.ToTable("CollectRequest");
 
+            entity.Property(e => e.FoodDetails).HasMaxLength(50);
+            entity.Property(e => e.RequestTime).HasMaxLength(50);
             entity.Property(e => e.Status)
                 .HasMaxLength(10)
                 .IsFixedLength();
 
             entity.HasOne(d => d.Employee).WithMany(p => p.CollectRequests)
                 .HasForeignKey(d => d.EmployeeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_CollectRequest_Employee");
 
             entity.HasOne(d => d.Restaurent).WithMany(p => p.CollectRequests)

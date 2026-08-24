@@ -11,6 +11,7 @@ namespace BLL
     {
         public MappingProfile()
         {
+            CreateMap<CollectRequest, CollectRequestModel>().ReverseMap();
             CreateMap<Employee, EmployeeModel>().ReverseMap();
             CreateMap<Restaurent, RestaurentModel>().ReverseMap();
         }

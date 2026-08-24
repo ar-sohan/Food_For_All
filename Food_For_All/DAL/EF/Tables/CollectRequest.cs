@@ -13,11 +13,15 @@ public partial class CollectRequest
 
     public int RestaurentId { get; set; }
 
-    public int EmployeeId { get; set; }
+    public int? EmployeeId { get; set; }
+
+    public string FoodDetails { get; set; } = null!;
+
+    public string RequestTime { get; set; } = null!;
 
     public virtual ICollection<Distribution> Distributions { get; set; } = new List<Distribution>();
 
-    public virtual Employee Employee { get; set; } = null!;
+    public virtual Employee? Employee { get; set; }
 
     public virtual Restaurent Restaurent { get; set; } = null!;
 }

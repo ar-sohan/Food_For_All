@@ -18,5 +18,22 @@ namespace BLL.Services
             this.mapper = mapper;
         }
 
+        public List<EmployeeModel> GetAllEmployees()
+        {
+            var employees = repo.GetAllEmployees();
+            return mapper.Map<List<EmployeeModel>>(employees);
+        }
+
+        public EmployeeModel GetEmployeeById(int id)
+        {
+            var employee = repo.GetEmployeeById(id);
+            return mapper.Map<EmployeeModel>(employee);
+        }
+
+        public bool AddEmployee(EmployeeModel employeeModel)
+        {
+            var employee = mapper.Map<Employee>(employeeModel);
+            return repo.AddEmployee(employee);
+        }
     }
 }

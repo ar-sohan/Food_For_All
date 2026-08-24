@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BLL.Models;
 using DAL.EF.Tables;
 using DAL.Repository;
 using System;
@@ -17,6 +18,22 @@ namespace BLL.Services
             this.mapper = mapper;
         }
 
-        
+        public List<RestaurentModel> GetAllRestaurents()
+        {
+            var restaurents = rr.GetAllRestaurents();
+            return mapper.Map<List<RestaurentModel>>(restaurents);
+        }
+
+        public RestaurentModel GetRestaurentById(int id)
+        {
+            var restaurent = rr.GetRestaurentById(id);
+            return mapper.Map<RestaurentModel>(restaurent);
+        }
+
+        public bool AddRestaurent(RestaurentModel restaurentModel)
+        {
+            var restaurent = mapper.Map<Restaurent>(restaurentModel);
+            return rr.AddRestaurent(restaurent);
+        }
     }
 }

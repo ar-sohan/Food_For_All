@@ -13,7 +13,39 @@
     }
   ],
   "paths": {
-    "/api/Employee/all": {
+    "/api/AddCollectRequest/add": {
+      "post": {
+        "tags": [
+          "AddCollectRequest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CollectRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CollectRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CollectRequestModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Employee/getAll": {
       "get": {
         "tags": [
           "Employee"
@@ -52,7 +84,7 @@
         }
       }
     },
-    "/api/Employee/create": {
+    "/api/Employee/add": {
       "post": {
         "tags": [
           "Employee"
@@ -84,15 +116,28 @@
         }
       }
     },
-    "/api/Employee/delete": {
-      "post": {
+    "/api/Restaurent/getAll": {
+      "get": {
         "tags": [
-          "Employee"
+          "Restaurent"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Restaurent/{id}": {
+      "get": {
+        "tags": [
+          "Restaurent"
         ],
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "pattern": "^-?(?:0|[1-9]\\d*)$",
               "type": [
@@ -110,43 +155,31 @@
         }
       }
     },
-    "/api/Employee/update": {
+    "/api/Restaurent/add": {
       "post": {
         "tags": [
-          "Employee"
+          "Restaurent"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EmployeeModel"
+                "$ref": "#/components/schemas/RestaurentModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/EmployeeModel"
+                "$ref": "#/components/schemas/RestaurentModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/EmployeeModel"
+                "$ref": "#/components/schemas/RestaurentModel"
               }
             }
           },
           "required": true
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Restaurent/all": {
-      "get": {
-        "tags": [
-          "Restaurent"
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -196,6 +229,53 @@
   },
   "components": {
     "schemas": {
+      "CollectRequestModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "maxPreserveUnit": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "status": {
+            "type": "string"
+          },
+          "restaurentId": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "employeeId": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "foodDetails": {
+            "type": "string"
+          },
+          "requestTime": {
+            "type": "string"
+          }
+        }
+      },
       "EmployeeModel": {
         "type": "object",
         "properties": {
@@ -223,6 +303,28 @@
               "null",
               "string"
             ]
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "RestaurentModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
           },
           "status": {
             "type": "string"
@@ -263,6 +365,9 @@
     }
   },
   "tags": [
+    {
+      "name": "AddCollectRequest"
+    },
     {
       "name": "Employee"
     },

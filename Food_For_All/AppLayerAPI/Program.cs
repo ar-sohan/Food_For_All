@@ -12,6 +12,9 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.Services.AddScoped<CollectRequestRepo>();
+builder.Services.AddScoped<CollectRequestService>();
+
 builder.Services.AddScoped<EmployeeRepo>();
 builder.Services.AddScoped<EmployeeService>();
 
