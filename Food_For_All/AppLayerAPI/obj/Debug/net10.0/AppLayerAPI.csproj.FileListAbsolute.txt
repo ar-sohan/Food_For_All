@@ -169,4 +169,3 @@ D:\6.Advance_dot_net\Food_For_All\Food_For_All\AppLayerAPI\bin\Debug\net10.0\run
 D:\6.Advance_dot_net\Food_For_All\Food_For_All\AppLayerAPI\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
 D:\6.Advance_dot_net\Food_For_All\Food_For_All\AppLayerAPI\bin\Debug\net10.0\AutoMapper.dll
 D:\6.Advance_dot_net\Food_For_All\Food_For_All\AppLayerAPI\obj\Debug\net10.0\AppLayerAPI.sourcelink.json
-D:\6.Advance_dot_net\Food_For_All\Food_For_All\AppLayerAPI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

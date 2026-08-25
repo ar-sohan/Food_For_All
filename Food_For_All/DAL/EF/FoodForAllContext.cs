@@ -34,6 +34,9 @@ public partial class FoodForAllContext : DbContext
             entity.ToTable("CollectRequest");
 
             entity.Property(e => e.FoodDetails).HasMaxLength(50);
+            entity.Property(e => e.MaxPreserveTime)
+                .IsRowVersion()
+                .IsConcurrencyToken();
             entity.Property(e => e.RequestTime).HasMaxLength(50);
             entity.Property(e => e.Status)
                 .HasMaxLength(10)

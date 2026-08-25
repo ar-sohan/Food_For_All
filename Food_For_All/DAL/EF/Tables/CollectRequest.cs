@@ -7,7 +7,7 @@ public partial class CollectRequest
 {
     public int Id { get; set; }
 
-    public int MaxPreserveUnit { get; set; }
+    public byte[] MaxPreserveTime { get; set; } = null!;
 
     public string Status { get; set; } = null!;
 
